@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-partner</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+      <nav>
+          <section class="px-12 py-8">
+              <main class="flex items-center justify-between">
+
+              <!-- logo & navbar -->
+
+                  <section class="flex items-center space-x-8">
+                      <a href="#">
+                          <div class="flex items-center space-x-2">
+                              <img src="./imgs/logo.svg" alt="logo" class=" w-14 rounded object-cover">
+                          </div>
+                      </a>
+                      <div class="lg:block hidden">
+                          <ul class="flex items-center space-x-5">
+                              <li>
+                                  <a href="" class="text-md font-bold">About</a>
+                              </li>
+                              <li>
+                                  <a href=""  class="text-md font-bold">Case Studies</a>
+                              </li>
+                              <li>
+                                  <a href=""  class="text-md font-bold">Services</a>
+                              </li>
+                              <li>
+                                  <a href=""  class="text-md font-bold">Blog</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </section>
+
+              <!-- extra -->
+
+                  <section class="flex items-center space-x-5"> 
+                      <div>
+                          <ul class="flex items-center space-x-4">
+                              <li class="lg:block hidden">
+                                  <div class="relative border-b border-black">
+                                      <div class="absolute left-1.5 top-1.5">
+                                          <img src="./imgs/search.svg" alt="search">
+                                      </div>
+                                      <input type="text" class="w-full h-8 p-1 rounded-mdbg-gray-700 pl-8" placeholder="search here...">
+                                  </div>
+                              </li >
+                              <li class="mt-1">
+                                  <button class="inline-flex items-center py-1 px-3  text-base md:mt-0">
+                                  <image src="./imgs/Icon.svg" class="pr-2"/>login
+                                  </button>
+                              </li>
+
+                              <!-- mobile button  -->
+                              <li class="lg:hidden block">
+                                  <button class="w-7 h-7 p-1 mt-2 " onclick = "navButton()">
+                                      <svg className="lg:w-6 lg:h-6 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                      <path strokeLinecap="round" id="bar" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                      <path strokeLinecap="round" class="hidden" id="cross-bar" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                      </svg>
+                                  </button>
+                              </li>
+                          </ul>
+                      </div>
+                  </section>
+              </main>
+          </section>
+
+          <!-- mobile navbar -->
+          <section class="lg:hidden block p-4 space-y-4 hidden" id="nav">
+              <div>
+                  <ul class="flex flex-col items-center space-y-5">
+                      <li>
+                          <a href="" class="text-md font-bold">About</a>
+                      </li>
+                      <li>
+                          <a href=""  class="text-md font-bold">Case Studies</a>
+                      </li>
+                      <li>
+                          <a href=""  class="text-md font-bold">Services</a>
+                      </li>
+                      <li>
+                          <a href=""  class="text-md font-bold">Blog</a>
+                      </li>
+                  </ul>
+              </div>
+
+              <section class="w-full">
+                  <div class="relative border-b border-black">
+                      <div class="absolute left-1.5 top-1.5">
+                          <img src="./imgs/search.svg" alt="search">
+                      </div>
+                      <input type="text" class="w-full h-8 p-1 rounded-mdbg-gray-700 pl-8" placeholder="search here...">
+                  </div>
+              </section>
+          </section>
+      </nav>
+  </header>
+      <!-- Banner -->
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 pt-24 pb-20 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Smart
+              <br class="hidden lg:inline-block">Consulting  <br class="hidden lg:inline-block">Group
+            </h1>
+            <p class="mb-8 leading-relaxed">We helping client  to create technology that uses Blockchain, AI and IOT with our talented expert.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-black  border-2 border-black py-2 px-6 focus:outline-none text-lg">Consult with an exprt now!</button>
+            </div>
+            <p class="mt-5">Already a memeber ?<a class="text-black pl-2">Sign in</a></p>
+            
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded"  src="./imgs/lady1.png">
+          </div>
+        </div>
+      </section>
+      <!-- What we do -->
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 justify-center -mt-4 md:space-y-0 space-y-6">
+            <div class="p-4 md:w-1/3 flex flex-col text-center  items-center">
+              <image src="./imgs/Icon2.svg" class="w-10 h-10 inline-flex items-center justify-center"/>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-3 mt-3">Marketing</h2>
+                <p class="leading-relaxed text-base text-start">Creating a spacing how people move through.</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <image src="./imgs/Icon2.svg" class="w-10 h-10 inline-flex items-center justify-center"/>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-3 mt-3">Dev & Design</h2>
+                <p class="leading-relaxed text-base text-start">Creating a higher spacing how people move through. From its mel origins to the digital era.</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <image src="./imgs/icon3.png" class="w-10 h-10 inline-flex items-center justify-center"/>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-3 mt-3">Creativity</h2>
+                <p class="leading-relaxed text-base text-start">Get a full cRontrol of debts in the
+                  dsu digital world simplesity. labore et dolore magna aliqua</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About us -->
+            <!-- starting -->
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                  <h2 class="sm:text-5xl text-3xl text-gray-900 lg:pr-24 font-medium title-font px-24 mb-2 md:w-2/5">We solve your Problem.</h2>
+                  <div class="md:w-3/5 md:pl-6 ">
+                    <p class="leading-relaxed text-base text-2xl pt-2 px-5">We don’t sell technology, We give <a href="#" class="text-indigo-700 underline ">ideas that boosts</a> your journey.</p>
+                  </div>
+                </div>
+              </section>
+              <!-- Mid portion -->
+              <section class="text-gray-600 body-font">
+                <div class="container px-5  mx-auto flex flex-wrap">
+
+                  <div class="lg:w-1/2 w-full h-full pl-1 mb-10 lg:mb-0 rounded-lg flex justify-center ">
+                    <image src="./imgs/Rectangle.png" class="object-cover object-center h-1/2 w-1/2"/>
+                  </div>
+
+                  <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+
+                    <div class="flex flex-col mb-10 lg:items-start items-center">
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Expert Members</h2>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col mb-10 lg:items-start items-center">
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Sequre & Trusted</h2>
+                        <p class="leading-relaxed text-base">Our founders Dustin Moskovitz and Justin quis Rosenstein met while leading Engineering team at Facebook. </p>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col mb-10 lg:items-start items-center">
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Expert Members</h2> 
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col mb-10 lg:items-start items-center">
+                      <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Big Resources</h2> 
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+            <!-- statistics -->
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto ">
+                <div class="flex flex-wrap  text-center justify-center">
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">3.5K</h2>
+                    <p class="leading-relaxed">Projects Done</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">20million</h2>
+                    <p class="leading-relaxed">Plus pages Build</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">3000+</h2>
+                    <p class="leading-relaxed">Device Invented</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+        <!-- Why choose us -->
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col  items-center">
+              <div class="lg:flex-grow md:w-1/2 lg:pr-24 lg:pl-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <div class="w-10 h-10 inline-flex items-center justify-center  mb-4">
+                  <img src="./imgs/Video Button.png" class="w-10 h-10 inline-flex items-center justify-center">
+                 </div>
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Why Choose
+                  <br class="hidden lg:inline-block">code Partner?
+                </h1>
+                <p class="mb-8 leading-relaxed">So how does it work? Let’s check our Getting Started tutorial for detailed info.</p>
+                <nav class="flex flex-col sm:items-start sm:text-left text-center items-center mb-7 space-y-2.5">
+                  <a>
+                    <span class=" text-gray-500 w-4 h-4 mr-2  inline-flex items-center justify-center">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Provides professional service with ease and single point of contact.
+                  </a>
+                  <a>
+                    <span class=" text-gray-500 w-4 h-4 mr-2  inline-flex items-center justify-center">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Takes complete responsibility from start to end.
+                  </a>
+                  <a>
+                    <span class=" text-gray-500 w-4 h-4 mr-2  inline-flex items-center justify-center">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                        <path d="M20 6L9 17l-5-5"></path>
+                      </svg>
+                    </span>Dedicated Relationship Manager in place.
+                  </a>
+                </nav>
+                <div class="flex justify-center">
+                  <button class="inline-flex text-white bg-black  py-2 px-6 focus:outline-none text-lg">Consult with an exprt now!</button>
+                </div>
+              </div>
+              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" src="./imgs/Secondary.png">
+              </div>
+            </div>
+          </section>
+          <!-- Our team -->
+          <section class="text-gray-600 body-font">
+            <div class="container px-24 py-24 mx-auto">
+              <div class="flex flex-col text-start w-full mb-20">
+                <h1 class="text-3xl font-medium title-font mb-4 text-gray-900">OUR CORE TEAM PLAYERS.</h1>
+              </div>
+              <div class="flex flex-wrap -m-4 justify-center">
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                  <div class="h-full flex flex-col items-center text-center">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./imgs/team1.png">
+                    <div class="w-full">
+                      <h2 class="title-font font-medium text-lg text-gray-900">Pralay Mandal</h2>
+                      <h3 class="text-gray-500 mb-3">CEO</h3>
+                      <span class="inline-flex">
+                        <a class="text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                  <div class="h-full flex flex-col items-center text-center">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./imgs/team2.png">
+                    <div class="w-full">
+                      <h2 class="title-font font-medium text-lg text-gray-900">Manab Ranjan Das
+                        </h2>
+                      <h3 class="text-gray-500 mb-3">Marketing</h3>
+                      <span class="inline-flex">
+                        <a class="text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                  <div class="h-full flex flex-col items-center text-center">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./imgs/team3.png">
+                    <div class="w-full">
+                      <h2 class="title-font font-medium text-lg text-gray-900">Bitu Saud
+                        </h2>
+                      <h3 class="text-gray-500 mb-3">Creative Head</h3>
+                      <span class="inline-flex">
+                        <a class="text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                          </svg>
+                        </a>
+                        <a class="ml-2 text-gray-500">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </section>
+          <!-- Testimonials -->
+          <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 justify-center md:flex-row flex-col items-center">
+              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" src="./imgs/Group 19868.svg">
+              </div>
+              <div class="xl:w-1/3 md:w-1/2 p-4">
+                <div class=" p-6 ">
+                  <div class="w-10 h-10 inline-flex items-center justify-center  mb-4">
+                   <img src="./imgs/Icon2.svg" class="w-10 h-10 inline-flex items-center justify-center">
+                  </div>
+                  <p class="mb-8 leading-relaxed mr-5">“Certainly from my perspective, Dream City has been a great success—with <a class="text-indigo-800 underline">CPIOT Platform</a> giving us that enterprise-level of assured quality on top.”</p>
+                  <span class="inline-block h-1 w-10 rounded bg-gray-500 mt-8 mb-6"></span>
+                  <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Meetun Norsha
+                    </h2>
+                  <p class="text-gray-500">INDIA</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Our news -->
+          <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-start w-full mb-20 pl-24">
+                <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-900">Our partners</h1>
+              </div>
+              
+              <div class="flex flex-wrap mx-10">
+                <div class="flex flex-col text-start  text-2xl w-full mb-2 pl-16"> 
+                  <h2 class="title-font font-medium text-gray-900 text-1xl tracking-widest text-sm mb-3">Cloud Partners</h2>
+                </div>
+               
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 lg:p-8" src="./imgs/colab1.png" alt="content">
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 lg:p-8" src="./imgs/colab2.png" alt="content">
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 lg:p-8" src="./imgs/colab3.png" alt="content">
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 lg:p-8" src="./imgs/colab4.png" alt="content">
+                  </div>
+                </div>
+                <div class="flex flex-col text-start w-full mb-2 pl-16"> 
+                  <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Blockchain partners</h2>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 lg:p-8" src="./imgs/colab5.png" alt="content">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Join us -->
+          <section class="text-gray-600 body-font bg-gray-900 ">
+            <div class="container px-24 py-24 mx-auto flex flex-wrap">
+              <h2 class="sm:text-5xl text-2xl text-white font-medium title-font mb-2 md:w-2/5">Join our
+                team be a great skills elit.</h2>
+              <div class="md:w-3/5 md:pl-6">
+                <p class="leading-relaxed text-base text-white sm:text-2xl">We’re a team of creatives who are excited about unique ideas & help.</p>
+                <div class="flex md:mt-4 mt-6">
+                  <button class="text-black-300 flex bg-white rounded lg:w-450  pl-3 text-center ml-4">Send Your CV
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2 mt-1" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+      <!-- Footer -->
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <image src="./imgs/logo2.svg" class="flex title-font font-medium items-center text-gray-900 pl-4 pr-4 mb-4 md:mb-0"/>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LINKS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Home</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Services</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">About us</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Careers</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Press Release</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Blog</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LEGAL</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Terms of use</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Privacy policy</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Cookie policy</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">NEWSLETTER</h2>
+              <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                  <p for="footer-field" class="leading-7 text-sm text-gray-600">Join over <a class="text-indigo-700 underline">68,000 </a>people getting our emails</p>
+                  <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Enter your email">
+                </div>
+                <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-900 rounded">Sign UP</button>
+              </div>
+              <p class="text-gray-500 text-sm mt-2 md:text-left text-center">We only send interesting and relevant emails.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+            <nav class="md:ml-auto  md:mr-auto flex flex-wrap items-center text-base justify-center">
+              <a class="mr-10 font-bold">Privacy & Terms </a>
+              <a class="mr-10 font-bold">Contact Us</a>
+            </nav>
+            <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">Copyright @2021 
+              <a href="#" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">Code PartnerIT </a>Solutions Pvt. Ltd.
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+
+
+      <!-- Scripts -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script>
+          function navButton(){
+  
+              if($("#nav").hasClass("hidden")){
+  
+                  $("#nav").removeClass("hidden");
+                  $("#bar").css({display:"none"});
+                  $("#cross-bar").css({display:"block"});
+  
+              }
+              else{
+  
+                  $("#nav").addClass("hidden");
+                  $("#bar").css({display:"block"});
+                  $("#cross-bar").css({display:"none"});
+              }
+  
+          }
+      </script>
+</body>
+</html>
